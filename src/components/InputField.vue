@@ -17,17 +17,17 @@ export default {
 <style>
 .field {
     width: 90%;
-    background-color: white;
+    background-color: #222428;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     height: 70px;
-    border: 2px solid #3880ff;
     border-radius: 20px;
+    padding-right: 20px;
 }
 
 .input {
     font-size: 30px;
-    color: black;
+    color: white;
 }
 </style>

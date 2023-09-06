@@ -1,11 +1,10 @@
 <template>
   <ion-page>
-    <!-- <ion-header :translucent="true">
-      <ion-toolbar>
-        <ion-title>Calculator </ion-title>
+    <ion-header>
+      <ion-toolbar color="dark">
+        <ion-title> Calculator </ion-title>
       </ion-toolbar>
-    </ion-header> -->
-
+    </ion-header>
     <ion-content :fullscreen="true">
       <div class="calculator">
         <section class="outcome-section">
@@ -34,7 +33,7 @@
             <IonButton :number=0 @click="changeInput(0)"></IonButton>
             <AccButton acc="/" @click="changeOperator('/')"></AccButton>
             <AccButton acc="=" @click="calculate()"></AccButton>
-            <AccButton acc="C" @click="clearAll()"></AccButton>
+            <AccButton acc="C" @click="clearAll()" color="medium"></AccButton>
           </div>
         </section>
       </div>
@@ -47,10 +46,11 @@ import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/vue
 import IonButton from '../components/NumberButton.vue';
 import AccButton from '../components/AccButton.vue';
 import inputField from '../components/InputField.vue';
-</script>
+</script >
 
 <script>
 export default {
+  components: { IonHeader, IonTitle, IonToolbar },
   data() {
     return {
       input: "",
@@ -169,6 +169,7 @@ export default {
   flex-direction: column;
   align-content: center;
   justify-content: center;
+  background-color: black;
 }
 
 .outcome-section {

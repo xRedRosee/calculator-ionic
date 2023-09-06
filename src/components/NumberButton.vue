@@ -1,5 +1,5 @@
 <template>
-    <ion-button shape="round" class="btn">
+    <ion-button shape="round" class="btn" color="primary" size="large">
         <p class="number"> {{ number }} </p>
     </ion-button>
 </template>
@@ -18,8 +18,8 @@ export default defineComponent({
 
 <style>
 .btn {
-    width: 90px;
-    height: 90px;
+    width: 80px;
+    height: 80px;
 }
 
 .number {
