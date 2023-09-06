@@ -1,6 +1,6 @@
 <template>
-    <ion-button shape="round">
-        <p> {{ acc }}</p>
+    <ion-button shape="round" class="btn">
+        <p class="operator"> {{ acc }}</p>
     </ion-button>
 </template>
 
@@ -16,3 +16,14 @@ export default defineComponent({
     }
 });
 </script>
+
+<style>
+.btn {
+    width: 90px;
+    height: 90px;
+}
+
+.operator {
+    font-size: 30px;
+}
+</style>

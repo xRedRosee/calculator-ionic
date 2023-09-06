@@ -1,5 +1,7 @@
 <template>
-    <p class="input"> {{ Input }}</p>
+    <div class="field">
+        <p class="input"> {{ Input }} </p>
+    </div>
 </template>
 <script>
 export default {
@@ -7,16 +9,25 @@ export default {
     props: {
         Input: {
             type: Number,
-            default: 0
+            default: ""
         }
-    },
-    mounted() {
-        console.log(this.Input);
     }
 }
 </script>
 <style>
+.field {
+    width: 90%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    border: 2px solid #3880ff;
+    border-radius: 20px;
+}
+
 .input {
-    font-size: 20px;
+    font-size: 30px;
+    color: black;
 }
 </style>
